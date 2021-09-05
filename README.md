@@ -1,5 +1,6 @@
 # Backend_Liv2Train_Awanish_Kumar_singh
-This is a repo for the purpose of the assignment given for the internship for the role of the backend developer role.
+
+* This is a repo for the purpose of the assignment given for the internship for the role of the backend developer role.
 
 
 <h1>Post mapping url for the addition of the training center.</h1>
