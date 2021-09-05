@@ -99,3 +99,109 @@ case 2: when successfully saved in the database.
 }
 
 ***
+
+<h1>Api for the getting of the list of the saved centers</h1>
+
+* url : localhost:9001/center/
+* method : GET
+
+Output:
+case 1: when there are some elements in the db.
+
+   {
+    "status": 0,
+    "result": [
+        {
+            "id": 1,
+            "centerName": "new",
+            "centerCode": "4578dsewj54a",
+            "address": {
+                "detailAddress": "vilage",
+                "city": "siwan",
+                "state": "bihar",
+                "pinCode": "841434"
+            },
+            "studentCapacity": 20,
+            "courses": [
+                "awa",
+                "man",
+                "cse"
+            ],
+            "date": "2021-09-05T17:47:25.693+00:00",
+            "contactEmail": "awanisgma@iul.com",
+            "contactPhone": "8414253652"
+        },
+        {
+            "id": 2,
+            "centerName": "DPS",
+            "centerCode": "O57pdsewj54a",
+            "address": {
+                "detailAddress": "Mirjapur",
+                "city": "Siwan",
+                "state": "Bihar",
+                "pinCode": "841435"
+            },
+            "studentCapacity": 20,
+            "courses": [
+                "ME",
+                "SCE",
+                "civil"
+            ],
+            "date": "2021-09-05T17:49:34.402+00:00",
+            "contactEmail": "mansih@g.com",
+            "contactPhone": "8414253672"
+        },
+        {
+            "id": 3,
+            "centerName": "DPS",
+            "centerCode": "O57pdsewj54a",
+            "address": {
+                "detailAddress": "Mirjapur",
+                "city": "Siwan",
+                "state": "Bihar",
+                "pinCode": "841435"
+            },
+            "studentCapacity": 20,
+            "courses": [
+                "ME",
+                "SCE",
+                "civil"
+            ],
+            "date": "2021-09-05T17:49:55.726+00:00",
+            "contactEmail": "mansih@g.com",
+            "contactPhone": "8414253672"
+        },
+        {
+            "id": 4,
+            "centerName": "Narayan",
+            "centerCode": "O5Jpdsewj54a",
+            "address": {
+                "detailAddress": "GOriakothi",
+                "city": "Gopalganj",
+                "state": "Bihar",
+                "pinCode": "840435"
+            },
+            "studentCapacity": 450,
+            "courses": [
+                "EE",
+                "SC",
+                "ssc"
+            ],
+            "date": "2021-09-05T17:54:12.827+00:00",
+            "contactEmail": "ansih@g.com",
+            "contactPhone": "9414253672"
+        }
+    ]
+} 
+
+***
+
+case 2: when there is no element in the db.
+
+{
+
+"status":0,
+"result":[]
+}
+
+
