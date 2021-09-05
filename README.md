@@ -3,8 +3,11 @@ This is a repo for the purpose of the assignment given for the internship for th
 
 
 <h1>Post mapping url for the addition of the training center.</h1>
-* localhost:9001/center/
-* method : POST
+
+*  localhost:9001/center/
+*   method : POST
+
+
 * input : 
 
 {
@@ -267,8 +270,9 @@ case 2: when there is no element in the db.
 
 {
 
-"status":0,
-"result":[]
+    "status":0,
+    "result":[]
+
 }
 
 
