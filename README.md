@@ -8,39 +8,62 @@ This is a repo for the purpose of the assignment given for the internship for th
 * input : 
 
 {
+
     "centerName":"Narayan",
     "centerCode":"O5Jpdsewj54a",
     "address":{
+    
+    
         "detailAddress":"GOriakothi",
         "city":"Gopalganj",
         "state":"Bihar",
         "pinCode":"840435"
+        
+        
     },
+    
+    
     "studentCapacity":450,
     "courses":["EE","SC","ssc"],
     "contactEmail":"ansih@g.com",
     "contactPhone":"9414253672"
+
+
+
 
 }
 
 ***
 
 output : 
+
+
 * case 1 : when failed to load due to some error:
 
+
+
 {
+
+
     "timestamp": "2021-09-05T18:02:35.325+00:00",
     "status": 404,
     "error": "Not Found",
+    
     "message": "Validation failed for object='trainingCenter'. Error count: 1",
-    "errors": [
+    "errors":
+    
+    [
         {
+        
+        
             "codes": [
                 "Email.trainingCenter.contactEmail",
                 "Email.contactEmail",
                 "Email.java.lang.String",
                 "Email"
             ],
+            
+            
             "arguments": [
                 {
                     "codes": [
@@ -51,6 +74,8 @@ output :
                     "defaultMessage": "contactEmail",
                     "code": "contactEmail"
                 },
+                
+                
                 [],
                 {
                     "arguments": null,
@@ -60,6 +85,8 @@ output :
                     ]
                 }
             ],
+            
+            
             "defaultMessage": "Email should be valid!!",
             "objectName": "trainingCenter",
             "field": "contactEmail",
@@ -68,6 +95,8 @@ output :
             "code": "Email"
         }
     ],
+    
+    
     "path": "/center/"
 }
 
@@ -75,26 +104,36 @@ output :
 
 case 2: when successfully saved in the database.
 {
+
+
     "status": 0,
     "result": {
         "id": 4,
         "centerName": "Narayan",
         "centerCode": "O5Jpdsewj54a",
-        "address": {
+        "address":
+        
+        {
             "detailAddress": "GOriakothi",
             "city": "Gopalganj",
             "state": "Bihar",
             "pinCode": "840435"
         },
+        
+        
         "studentCapacity": 450,
         "courses": [
             "EE",
             "SC",
             "ssc"
         ],
+        
+        
         "date": "2021-09-05T17:54:12.827+00:00",
         "contactEmail": "ansih@g.com",
         "contactPhone": "9414253672"
+        
+        
     }
 }
 
