@@ -24,12 +24,16 @@ public class MyController {
 	@Autowired
 	MyService myService;
 	
+	//this is the post calling of the apis saving the data in the database.
+	
 	@PostMapping
 	public  ResponseModel add(@Valid @RequestBody TrainingCenter tCenter)
 	{
 			TrainingCenter savetraining = myService.savetraining(tCenter);
 			return new ResponseModel(0, savetraining);	
 	}
+	
+	//this is the get api for getting the lists of the database ..
 	
 	@GetMapping
 	public ResponseModel get()

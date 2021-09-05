@@ -12,8 +12,12 @@ import com.demo.mvp.repo.TrainingCenterRepo;
 @Service
 public class MyService {
 
+	//spring ioc concept.
 	@Autowired
 	private TrainingCenterRepo trRepo;
+	
+	
+	//saving the object in the database.
 	
 	public TrainingCenter savetraining(TrainingCenter tCenter)
 	{
@@ -22,6 +26,8 @@ public class MyService {
 		return save;
 	}
 
+	//getting the lists of training centers ...
+	
 	public List<TrainingCenter> getCenters() {
 		
 		List<TrainingCenter> findAll = trRepo.findAll();
